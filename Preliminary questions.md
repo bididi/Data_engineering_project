@@ -7,7 +7,6 @@ The use of a dataLake favors the processing of data by data-scientists. The data
 
 ### 2) What business constraint should the architecture meet to fulfill the requirement describe in the paragraph «Alert»
 
-blabla
 
 ### 3) What mistake(s) from Peaceland can explains the failed attempt?
 
@@ -15,4 +14,4 @@ blabla
 
 ### 4) Peaceland has likely forgotten some technical information in the report sent by the drone. In the future this information could help Peaceland make its peacewatchers much more efficient. Which information?
 
-They most likely have forgoten to send the date and hour, the report was sent.  Having those informations will held the peacemaker to analyse what's the moment were there will most likely have a problem and send more peace watcher then.
+They most likely have forgoten to send the date and hour, when the report is sent.  Having those informations will held the peacemaker to analyse what's the moment were there will most likely have a problem and they can send more peace watcher then.
