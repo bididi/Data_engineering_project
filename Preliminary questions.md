@@ -10,7 +10,11 @@ The main constraint is that the drone should always be in contact with many peac
 
 ### 3) What mistake(s) from Peaceland can explains the failed attempt?
 
-blabla
+Many mistakes were made by our predecessors :
+The team may have used a language such as python, which is not adapted to a functional programming language like scala.
+The team may not have used a flexible data storage architecture, the daily addition of 200GB may not have been considered.
+Their storage architecture may not have been designed for peacemaker to properly parse the data received, so retrieving data from their architecture may have been too complicated.
+
 
 ### 4) Peaceland has likely forgotten some technical information in the report sent by the drone. In the future this information could help Peaceland make its peacewatchers much more efficient. Which information?
 
