@@ -6,7 +6,7 @@ The use of a Datalake appears to be an interesting solution. This last one, allo
 The use of a dataLake favors the processing of data by data-scientists. The data from the peacewatcher will therefore be easy to analyze.
 
 ### 2) What business constraint should the architecture meet to fulfill the requirement describe in the paragraph «Alert»
-
+The main constraint is that the drone should always be in contact with many peacemaker, they should reach the ones that are the closest to the citizen with a bad 'peacescore', so that the situation will quickly be resolved. And if there are many trigger next to each other we must have many peacewatchers that can be reached and then can take the hand on the situation.
 
 ### 3) What mistake(s) from Peaceland can explains the failed attempt?
 
