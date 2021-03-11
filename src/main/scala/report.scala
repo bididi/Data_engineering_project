@@ -1,8 +1,9 @@
 import scala.util.Random
 
-val random = new Random
 
 class report {
+
+  val random = new Random
 
   val possibleRepliesName = Seq(
     "Sophia",
