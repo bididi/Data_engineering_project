@@ -67,4 +67,5 @@ import scala.util.Random
     println("Report drone id°"+ Id  + " Latitude et longitude " + "("+Lat +","+ Long +")"+" Drone see : "+ Name + " with Peace score "+ peaceScore + " Peacewatcher heard : "+ Word)
 
 
+
 }
