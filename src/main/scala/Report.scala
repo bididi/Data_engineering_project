@@ -1,6 +1,6 @@
 import scala.util.Random
 
-class report() {
+ case class Report(Id: Int) {
 
   val random = new Random
 
@@ -14,7 +14,7 @@ class report() {
     "Isaac"
   )
 
-  val replyName = possibleRepliesName(
+  val Name = possibleRepliesName(
     random.nextInt(possibleRepliesName.length)
   )
 
@@ -28,7 +28,7 @@ class report() {
     "Dude"
   )
 
-  val replyWord = possibleRepliesWord(
+  val Word = possibleRepliesWord(
     random.nextInt(possibleRepliesWord.length)
   )
 
@@ -42,7 +42,7 @@ class report() {
     "40.754863"
   )
 
-  val replyLat = possibleRepliesLat(
+  val Lat = possibleRepliesLat(
     random.nextInt(possibleRepliesLat.length)
   )
 
@@ -55,12 +55,16 @@ class report() {
     "27.791328",
     "33.754863"
   )
+  val peaceScore = random.nextInt(100)
 
-  val replyLong = possibleRepliesLong(
+
+  val Long = possibleRepliesLong(
     random.nextInt(possibleRepliesLong.length)
   )
 
+  def getName():Unit=
 
+    println("Report drone id°"+ Id  + " Latitude et longitude " + "("+Lat +","+ Long +")"+" Drone see : "+ Name + " with Peace score "+ peaceScore + " Peacewatcher heard : "+ Word)
 
 
 }
