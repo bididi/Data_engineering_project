@@ -1,6 +1,6 @@
 import scala.util.Random
 
-class report {
+class report() {
 
   val random = new Random
 
@@ -60,17 +60,7 @@ class report {
     random.nextInt(possibleRepliesLong.length)
   )
 
-  val possibleRepliesId = Seq(
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7"
-  )
 
-  val replyId = possibleRepliesId(
-    random.nextInt(possibleRepliesId.length)
-  )
+
+
 }
