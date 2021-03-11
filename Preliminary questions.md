@@ -2,7 +2,8 @@
 
 ### 1) What technical/business constraints should the data storage component of the program architecture meet to fulfill the requirement described by the customer in paragraph «Statistics» ? So what kind of component(s) (listed in the lecture) will the architecture need?
 
-blabla
+The use of a Datalake appears to be an interesting solution. This last one, allows us to store data in an important quantity respecting the 200go of daily reports of our residents. We need to store this data for an indefinite time, which is easy in a data lake.
+The use of a dataLake favors the processing of data by data-scientists. The data from the peacewatcher will therefore be easy to analyze.
 
 ### 2) What business constraint should the architecture meet to fulfill the requirement describe in the paragraph «Alert»
 
