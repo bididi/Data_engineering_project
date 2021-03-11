@@ -14,3 +14,4 @@ blabla
 
 ### 4) Peaceland has likely forgotten some technical information in the report sent by the drone. In the future this information could help Peaceland make its peacewatchers much more efficient. Which information?
 
+They most likely have forgoten to send the date and hour, the report was sent.  Having those informations will held the peacemaker to analyse what's the moment were there will most likely have a problem and send more peace watcher then.
