@@ -3,9 +3,9 @@ import scala.util.Random
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val random = new Random
-    val report = Report(1)
-    report.getName()
+
+    val drone1 = new Drone(1)
+    drone1.doReport()
 
   }
 }
