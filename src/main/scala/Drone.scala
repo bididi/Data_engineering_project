@@ -2,9 +2,10 @@
 
 class Drone(Id: Int) {
 
-  def doReport() {
+  def doReport(): Report = {
     val report = Report(Id)
     report.getName()
+    report
   }
 
 }

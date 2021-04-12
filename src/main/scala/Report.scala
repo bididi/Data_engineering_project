@@ -1,3 +1,6 @@
+import org.apache.kafka.clients.producer.ProducerConfig
+
+import java.util.Properties
 import scala.util.Random
 
  case class Report(Id: Int) {
@@ -63,9 +66,7 @@ import scala.util.Random
   )
 
   def getName():Unit=
-
     println("Report drone id°"+ Id  + " Latitude et longitude " + "("+Lat +","+ Long +")"+" Drone see : "+ Name + " with Peace score "+ peaceScore + " Peacewatcher heard : "+ Word)
-
-
-
 }
+
+
