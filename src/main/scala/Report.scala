@@ -65,8 +65,21 @@ import scala.util.Random
     random.nextInt(possibleRepliesLong.length)
   )
 
-  def getName():Unit=
-    println("Report drone id°"+ Id  + " Latitude et longitude " + "("+Lat +","+ Long +")"+" Drone see : "+ Name + " with Peace score "+ peaceScore + " Peacewatcher heard : "+ Word)
+   val slash = "/"
+   val concat = (Id.toString).concat(slash)
+   val concat1 = concat.concat(Lat)
+   val concat2 = concat1.concat(slash)
+   val concat3 = concat2.concat(Long)
+   val concat4 = concat3.concat(slash)
+   val concat5 = concat4.concat(Name)
+   val concat6 = concat5.concat(slash)
+   val concat7 = concat6.concat(Word)
+
+  def getName(): (String)= {
+    //val rapport = "Report drone id°"+ Id  + " Latitude et longitude " + "("+Lat +","+ Long +")"+" Drone see : "+ Name + " with Peace score "+ peaceScore + " Peacewatcher heard : "+ Word
+    concat7
+  }
 }
+
 
 
