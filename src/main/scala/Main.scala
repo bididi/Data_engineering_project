@@ -5,13 +5,15 @@ import java.util.TimerTask
 object Main {
   def main(args: Array[String]): Unit = {
 
+    val drone2 = new Drone(2)
+    val drone1 = new Drone(3)
+
     val task = new TimerTask {
 
       def run()= {
 
 
-        val drone2 = new Drone(2)
-        val drone1 = new Drone(3)
+
         drone1.doReport()
         drone2.doReport()
       }
