@@ -8,18 +8,39 @@ import scala.util.Random
   val random = new Random
 
   val possibleRepliesName = Seq(
-    "Sophia",
-    "Anthony",
-    "Joshua",
-    "Logan",
-    "Luke",
-    "Tyler",
-    "Isaac"
+   "Sophia",
+   "Anthony",
+   "Joshua",
+   "Logan",
+   "Luke",
+   "Tyler",
+   "Isaac",
+   "Isabella",
+   "Mason",
+   "Emma",
+   "William",
+   "Olivia",
+   "Jayden",
+   "Ava",
+   "Noah",
+   "Emily",
+   "Michael",
+   "Abigail",
+   "Ethan",
+   "Madison",
+   "Alexander",
+   "Mia",
+   "Chloe",
+   "Daniel",
+   "Elizabeth"
   )
 
   val Name = possibleRepliesName(
     random.nextInt(possibleRepliesName.length)
   )
+   random.between(2, 5)
+
+
 
   val possibleRepliesWord = Seq(
     "Police",
@@ -28,7 +49,17 @@ import scala.util.Random
     "Red",
     "Green",
     "Gang",
-    "Dude"
+    "Dude",
+    "tire ",
+    "perform ",
+    "appreciate ",
+    "tear ",
+    "scrap ",
+    "pair ",
+    "overcharge ",
+    "strap ",
+    "excitement ",
+    "killer"
   )
 
   val Word = possibleRepliesWord(
@@ -36,6 +67,11 @@ import scala.util.Random
   )
 
   val possibleRepliesLat = Seq(
+    "48.969667",
+    "48.168578",
+    "48.455945",
+    "48.754863",
+    "48.391328",
     "48.866667",
     "12.569478",
     "20.235984",
@@ -50,13 +86,19 @@ import scala.util.Random
   )
 
   val possibleRepliesLong = Seq(
-    "18.866667",
-    "15.569478",
-    "27.235984",
-    "55.021568",
-    "14.648512",
-    "27.791328",
-    "33.754863"
+    "01.754863",
+    "01.021568",
+    "01.648512",
+    "01.791328",
+    "01.866667",
+    "02.569478",
+    "02.235984",
+    "02.021568",
+    "02.648512",
+    "02.791328",
+    "02.648512",
+    "02.791328",
+    "02.754863"
   )
   val peaceScore = random.nextInt(100)
 
