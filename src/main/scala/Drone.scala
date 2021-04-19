@@ -1,22 +1,20 @@
-import javafx.scene.control.Alert
+
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
 
 import java.util.Properties
 
 class Drone(Id: Int) {
 
-  def doReport():Unit = {
+  def doReport(): Unit = {
     val report = Report(Id)
     val rapport = report.getName()
     this.MyProducer.start(rapport)
   }
-  def doAlert(alert:String):Unit = {
+
+  def doAlert(alert: String): Unit = {
     this.MyProducer.start2(alert)
   }
-  /*object MyTopic{
-    val topic = "monTopic"
-  }
-*/
+
   object MyProducer {
     val props = new Properties()
 
@@ -26,27 +24,26 @@ class Drone(Id: Int) {
 
     val producer = new KafkaProducer[String, String](props)
 
-    def start(rapport:String): Unit = {
+    def start(rapport: String): Unit = {
 
-        println("Starting...")
-        //val str = scala.util.Random.nextInt(10).toString
-        println(s"Sending $rapport")
-        val message = new ProducerRecord[String, String]("monTopic2", null, rapport)
-        producer.send(message)
-        println(message)
-        println("MESSAGE : " + rapport)
+      //println("Starting...")
+     // println(s"Sending $rapport")
+      val message = new ProducerRecord[String, String]("monTopic2", null, rapport)
+      producer.send(message)
+      //println(message)
+      //println("MESSAGE : " + rapport)
 
 
     }
-    def start2(alert:String): Unit = {
 
-      println("Starting alert...")
-      //val str = scala.util.Random.nextInt(10).toString
-      println(s"Sending $alert")
+    def start2(alert: String): Unit = {
+
+      //println("Starting alert...")
+      //println(s"Sending $alert")
       val message = new ProducerRecord[String, String]("Peacemaker1", null, alert)
       producer.send(message)
-      println(message)
-      println("MESSAGE : " + alert)
+      //println(message)
+      //println("MESSAGE : " + alert)
 
 
     }

@@ -4,37 +4,28 @@ import java.util.{Collections, Properties, TimerTask}
 import scala.collection.JavaConverters._
 
 
-
 object Peacemakers {
-  //  val props = new Properties()
-  //  props.put("group.id", "monPremierGroupID")
-  //  props.put("zookeeper.connect", "localhost:2181")
-  //  props.put("auto.offset.reset", "smallest")
-  //
-  //  val config = new ConsumerConfig(props)
-  //  val connector = Consumer.create(config)
+
 
   def main(args: Array[String]): Unit = {
-    val  props = new Properties()
+    val props = new Properties()
     props.put("bootstrap.servers", "localhost:9092")
-    //ee
     props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
     props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
     props.put("group.id", "monPremierGroupID")
-    //props.put("auto.offset.reset", "smallest")
+
 
     val consumer = new KafkaConsumer[String, String](props)
 
     consumer.subscribe(Collections.singletonList("Peacemaker1"))
     val task = new TimerTask {
 
-      def run()= {
-        println("Start receiving...")
-        val records=consumer.poll(60000)
-        // for (record<-records.asScala) {
+      def run() = {
+        //println("Start receiving...")
+        val records = consumer.poll(60000)
         val record = records.asScala
-        println("A record has been detected")
-        println(record)
+        //println("A record has been detected")
+        //println(record)
       }
 
 

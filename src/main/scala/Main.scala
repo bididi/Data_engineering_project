@@ -1,5 +1,3 @@
-import scala.math.random
-import scala.util.Random
 import java.util.TimerTask
 
 object Main {
@@ -11,14 +9,13 @@ object Main {
 
     val task = new TimerTask {
 
-      def run()= {
-
+      def run() = {
 
 
         drone1.doReport()
         drone2.doReport()
       }
-  }
+    }
     val timer = new java.util.Timer()
     timer.schedule(task, 0, 60000)
   }
