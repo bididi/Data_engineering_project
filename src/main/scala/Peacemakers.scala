@@ -25,7 +25,7 @@ object Peacemakers {
 
     val consumer = new KafkaConsumer[String, String](props)
 
-    consumer.subscribe(Collections.singletonList("Peacemaker"))
+    consumer.subscribe(Collections.singletonList("Peacemaker1"))
     val task = new TimerTask {
 
       def run()= {

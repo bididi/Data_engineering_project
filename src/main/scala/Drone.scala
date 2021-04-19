@@ -31,8 +31,9 @@ class Drone(Id: Int) {
         println("Starting...")
         //val str = scala.util.Random.nextInt(10).toString
         println(s"Sending $rapport")
-        val message = new ProducerRecord[String, String]("monTopic1", null, rapport)
+        val message = new ProducerRecord[String, String]("monTopic2", null, rapport)
         producer.send(message)
+        println(message)
         println("MESSAGE : " + rapport)
 
 
@@ -42,8 +43,9 @@ class Drone(Id: Int) {
       println("Starting alert...")
       //val str = scala.util.Random.nextInt(10).toString
       println(s"Sending $alert")
-      val message = new ProducerRecord[String, String]("Peacemaker", null, alert)
+      val message = new ProducerRecord[String, String]("Peacemaker1", null, alert)
       producer.send(message)
+      println(message)
       println("MESSAGE : " + alert)
 
 
